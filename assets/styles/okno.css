@@ -1,0 +1,266 @@
+.fon-okna {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.okno {
+  position: relative;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.10);
+  padding: 24px 35px 34px;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.okno-vybor {
+  max-width: 582px;
+}
+
+.okno-forma {
+  max-width: 749px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zakryt {
+  position: absolute;
+  top: 19px;
+  right: 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.okno-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.logo-img {
+  width: 116px;
+  height: 116px;
+  object-fit: cover;
+}
+
+.logo-text {
+  color: var(--orange-logo);
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.okno-zag {
+  color: var(--black);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 28px;
+}
+
+.okno-zag.centr {
+  text-align: center;
+}
+
+.knopki-vhoda {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.btn-seraya {
+  width: 100%;
+  height: 69px;
+  border-radius: 10px;
+  background: var(--gray);
+  border: 1px solid var(--black);
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.btn-soc {
+  background: rgba(217, 217, 217, 0.90);
+  font-size: 24px;
+}
+
+.polya {
+  width: 100%;
+  max-width: 454px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-bottom: 30px;
+}
+
+.ramka-polya {
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  background: var(--gray);
+  padding: 11px 9px;
+}
+
+.vvod {
+  width: 100%;
+  height: 47px;
+  border-radius: 15px;
+  background: var(--white);
+  border: none;
+  outline: none;
+  padding: 0 19px;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.vvod::placeholder {
+  color: rgba(0, 0, 0, 0.40);
+}
+
+.btn-otpravit {
+  width: 280px;
+  max-width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  background: var(--gray);
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.galochka {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.galochka.v-forme {
+  width: 100%;
+  max-width: 454px;
+}
+
+.galochka.malaya {
+  font-size: 20px;
+}
+
+.chek {
+  width: 26px;
+  height: 26px;
+  accent-color: var(--blue);
+  flex-shrink: 0;
+}
+
+.pravila {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.ssylka-reg {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .okno {
+    padding: 18px 20px 24px;
+    max-width: 380px;
+  }
+
+  .logo-img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .okno-zag {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .knopki-vhoda {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .btn-seraya {
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .btn-soc {
+    font-size: 18px;
+  }
+
+  .polya {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .ramka-polya {
+    height: 54px;
+    padding: 7px;
+  }
+
+  .vvod {
+    height: 40px;
+    font-size: 15px;
+    padding: 0 14px;
+  }
+
+  .btn-otpravit {
+    width: 100%;
+    height: 52px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .galochka,
+  .galochka.malaya {
+    font-size: 15px;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .chek {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pravila {
+    font-size: 13px;
+  }
+
+  .ssylka-reg {
+    font-size: 14px;
+  }
+}

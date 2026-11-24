@@ -1,0 +1,11 @@
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--blue);
+}
+
+.osnova {
+  flex: 1;
+  background: var(--white);
+}

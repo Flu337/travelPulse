@@ -1,0 +1,204 @@
+.shapka {
+  background: var(--blue);
+  padding: 5px 0 12px;
+}
+
+.shapka-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.logo-pic {
+  width: 83px;
+  height: 83px;
+  object-fit: cover;
+}
+
+.logo-name {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.shapka-poisk {
+  flex: 1;
+  max-width: 1110px;
+  height: 46px;
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 30px;
+  gap: 12px;
+}
+
+.poisk-vvod {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.poisk-vvod::placeholder {
+  color: var(--text-ph);
+}
+
+.poisk-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pravo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.yazyk-box {
+  position: relative;
+}
+
+.yazyk-btn {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.yazyk-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 91px;
+  min-height: 97px;
+  border-radius: 10px;
+  background: var(--orange-logo);
+  border: 1px solid var(--black);
+  padding: 6px 6px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 40;
+}
+
+.yazyk-opt {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.yazyk-plus {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.vhod-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--white);
+}
+
+.user-pic {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.vhod-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu-pic {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .shapka-row {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .shapka-poisk {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* мобильная шапка по макету 428px */
+@media (max-width: 768px) {
+  .shapka {
+    padding: 6px 0 8px;
+  }
+
+  .shapka-row {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .shapka-poisk {
+    display: none;
+  }
+
+  .logo-pic {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logo-name {
+    font-size: 20px;
+  }
+
+  .pravo {
+    gap: 10px;
+  }
+
+  .yazyk-btn,
+  .vhod-text {
+    font-size: 16px;
+  }
+
+  .vhod-btn {
+    gap: 6px;
+  }
+
+  .user-pic,
+  .menu-pic {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 370px) {
+  .vhod-text {
+    display: none;
+  }
+}

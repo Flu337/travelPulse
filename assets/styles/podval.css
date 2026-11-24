@@ -1,0 +1,108 @@
+.podval {
+  background: var(--blue);
+  color: var(--white);
+  padding: 46px 0 28px;
+}
+
+.podval-grid {
+  display: grid;
+  grid-template-columns: minmax(140px, 237px) minmax(220px, 429px) minmax(260px, 1fr) auto;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+
+.kolonka {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ssylka {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.valuta-box {
+  align-self: end;
+}
+
+.valuta {
+  min-width: 264px;
+  height: 37px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.kopirait {
+  text-align: center;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mob-only {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .podval-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .valuta-box {
+    align-self: start;
+  }
+}
+
+/* мобильный подвал по макету 428px */
+@media (max-width: 768px) {
+  .podval {
+    padding: 18px 0 16px;
+  }
+
+  .podval-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .kolonka {
+    gap: 10px;
+  }
+
+  .ssylka {
+    font-size: 10px;
+  }
+
+  .valuta {
+    min-width: 129px;
+    height: 18px;
+    padding: 0 6px;
+    font-size: 10px;
+  }
+
+  .desk-only {
+    display: none;
+  }
+
+  .mob-only {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+}

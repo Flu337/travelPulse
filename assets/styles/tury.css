@@ -1,0 +1,181 @@
+.tury {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.verh {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.zag {
+  color: var(--black);
+  font-size: clamp(24px, 2.6vw, 40px);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.vse {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mob-vse-box {
+  display: none;
+}
+
+.tury-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 98px;
+}
+
+.karta {
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 24px 36px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto-box {
+  width: 100%;
+  aspect-ratio: 412 / 315;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mesto {
+  color: var(--text-muted);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.opis {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.reiting {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-end;
+}
+
+.ocenka {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.zvezda {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+@media (max-width: 1280px) {
+  .tury-grid {
+    gap: 36px;
+  }
+
+  .karta {
+    padding: 20px 24px 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tury-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+/* мобильная сетка 2x2 по макету 428px */
+@media (max-width: 768px) {
+  .tury {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .verh {
+    margin-bottom: 16px;
+  }
+
+  .zag {
+    font-size: 18px;
+  }
+
+  .desk-vse {
+    display: none;
+  }
+
+  .tury-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .karta {
+    padding: 8px 10px 10px;
+    border-radius: 20px;
+  }
+
+  .foto-box {
+    border-radius: 16px;
+    margin-bottom: 6px;
+  }
+
+  .mesto,
+  .opis,
+  .ocenka {
+    font-size: 10px;
+  }
+
+  .mesto {
+    margin-bottom: 4px;
+  }
+
+  .opis {
+    margin-bottom: 8px;
+  }
+
+  .zvezda {
+    width: 10px;
+    height: 10px;
+  }
+
+  .mob-vse-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .mob-vse {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,605 @@
+.hero {
+  background: var(--blue);
+  padding: 16px 0 57px;
+}
+
+.servisy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 21px;
+}
+
+.tab {
+  height: 41px;
+  padding: 0 18px 0 10px;
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-ico {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.tab-ico.car {
+  width: 41px;
+  height: 41px;
+}
+
+.zag {
+  color: var(--white);
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 37px;
+}
+
+.mob-zag,
+.mob-forma {
+  display: none;
+}
+
+/* сетка поиска 6 полей и кнопка */
+.forma-desk {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) 191px;
+  gap: 15px;
+  align-items: center;
+}
+
+.pole-box {
+  position: relative;
+}
+
+.pole {
+  width: 100%;
+  min-height: 92px;
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+}
+
+.metka {
+  display: block;
+  width: 100%;
+  padding: 11px 14px 8px;
+  border-bottom: 1px solid var(--black);
+  color: var(--text-label);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metka.mal {
+  font-size: 16px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.znach,
+.vvod-polya {
+  display: block;
+  width: 100%;
+  padding: 8px 14px 10px;
+  color: var(--text-val);
+  font-size: clamp(16px, 1.35vw, 24px);
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vvod-polya {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.vvod-polya::placeholder {
+  color: var(--text-val);
+}
+
+.btn-poisk {
+  width: 100%;
+  height: 75px;
+  border-radius: 0;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* выпадашки поиска */
+.vypad {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  z-index: 30;
+  background: var(--white);
+  border: 1px solid var(--black);
+}
+
+.krest {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.krest.stat {
+  position: static;
+}
+
+.vypad-otkuda {
+  width: 413px;
+  border-radius: 30px;
+  padding: 25px 19px 22px;
+}
+
+.spisok-gorodov {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.gorod-btn {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  padding-right: 24px;
+}
+
+.gorod-ico {
+  margin-top: 4px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.gorod-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gorod-name {
+  color: var(--text-val);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.gorod-sub {
+  color: var(--text-val);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.vypad-kuda {
+  width: 424px;
+  border-radius: 20px;
+  padding: 15px 40px 15px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kuda-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--blue-btn);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.vypad-kalendar {
+  width: 559px;
+  border-radius: 30px;
+  padding: 20px 24px 19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.kal-verh {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.kal-tabs {
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  height: 27px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kal-tab {
+  padding: 0 14px;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.kal-tab.on {
+  color: var(--blue);
+}
+
+.kal-line {
+  width: 1px;
+  height: 100%;
+  background: var(--black);
+}
+
+.kal-tip-row {
+  margin-bottom: 14px;
+}
+
+.kal-tip {
+  height: 23px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--black);
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kal-mesyacy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.mes-box {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mes-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.mes-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.strelka {
+  width: 32px;
+  height: 28px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pusto {
+  width: 32px;
+}
+
+.dni-zag,
+.dni-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  text-align: center;
+}
+
+.dni-zag {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-label);
+}
+
+.den {
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.den.off {
+  cursor: default;
+}
+
+.den.vybran {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.kal-niz {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.kal-podskaz {
+  font-size: 15px;
+}
+
+.kal-ok {
+  width: 162px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--blue-btn);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.vypad-ludi {
+  width: 404px;
+  border-radius: 20px;
+  padding: 20px 33px 22px;
+  right: 0;
+  left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ludi-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-right: 18px;
+}
+
+.ludi-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ludi-sub {
+  color: var(--text-sub);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.schet {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pm {
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  background: var(--gray);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cifra {
+  min-width: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.vypad-klass {
+  width: 241px;
+  border-radius: 15px;
+  padding: 14px 21px 18px;
+  right: 0;
+  left: auto;
+}
+
+.klass-zag {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-right: 20px;
+}
+
+.klass-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.klass-opt {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.klass-opt.on {
+  color: var(--blue);
+}
+
+@media (max-width: 1400px) {
+  .forma-desk {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .btn-poisk {
+    grid-column: 1 / -1;
+    max-width: 260px;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 1024px) {
+  .forma-desk {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vypad-kalendar {
+    left: 0;
+    transform: none;
+    max-width: calc(100vw - 40px);
+  }
+}
+
+/* мобилная версия поиска строго по под телефон frame 1 */
+@media (max-width: 768px) {
+  .hero {
+    padding: 8px 0 18px;
+  }
+
+  .servisy,
+  .desk-zag,
+  .forma-desk {
+    display: none;
+  }
+
+  .mob-zag {
+    display: block;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .mob-forma {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mob-otkuda {
+    align-self: flex-start;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+  }
+
+  .mob-galka {
+    font-size: 14px;
+  }
+
+  .mob-kuda {
+    width: 100%;
+    height: 47px;
+    border-radius: 15px;
+    background: var(--white);
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mob-vvod {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  .mob-vvod::placeholder {
+    color: var(--black);
+  }
+
+  .mob-setka {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mob-knopka {
+    height: 47px;
+    border-radius: 15px;
+    background: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mob-svg {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  .mob-btn-poisk {
+    width: 100%;
+    height: 47px;
+    border-radius: 15px;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .mob-drop {
+    position: relative;
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  .gorod-name,
+  .klass-opt,
+  .ludi-name {
+    font-size: 15px;
+  }
+
+  .gorod-sub,
+  .ludi-sub {
+    font-size: 13px;
+  }
+
+  .klass-zag {
+    font-size: 18px;
+  }
+
+  .kal-tab {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+}
