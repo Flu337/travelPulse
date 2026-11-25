@@ -66,55 +66,55 @@ const goroda = [
   {
     name: "Россия (RU)",
     sub: "Россия",
-    icon: "./images/icon-flag.png",
+    icon: "/travelPulse/images/icon-flag.png",
     sz: 25,
   },
   {
     name: "Москва (Любой)",
     sub: "Россия",
-    icon: "./images/icon-pointer.png",
+    icon: "/travelPulse/images/icon-pointer.png",
     sz: 25,
   },
   {
     name: "Санкт-Петербург Пулково (LED)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Казань (KZN)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Сочи (AER)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Мома (MQJ)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Москва Шереметьево (SVO)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Москва Внуково (VKO)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
   {
     name: "Москва Жуковский (ZIA)",
     sub: "Россия",
-    icon: "./images/icon-airplane.png",
+    icon: "/travelPulse/images/icon-airplane.png",
     sz: 29,
   },
 ];
@@ -209,7 +209,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
           @click="tab = 'cars'"
         >
           <img
-            src="./images/icon-car.png"
+            src="/travelPulse/images/icon-car.png"
             alt=""
             class="tab-ico car"
             width="41"
@@ -225,7 +225,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
           @click="tab = 'flights'"
         >
           <img
-            src="./images/icon-airport.png"
+            src="/travelPulse/images/icon-airport.png"
             alt=""
             class="tab-ico"
             width="36"
@@ -241,7 +241,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
           @click="tab = 'hotels'"
         >
           <img
-            src="./images/icon-bed.png"
+            src="/travelPulse/images/icon-bed.png"
             alt=""
             class="tab-ico"
             width="37"
@@ -272,7 +272,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               @click="closeMenu"
             >
               <img
-                src="./images/icon-close.png"
+                src="/travelPulse/images/icon-close.png"
                 alt=""
                 width="23"
                 height="23"
@@ -322,7 +322,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               @click="closeMenu"
             >
               <img
-                src="./images/icon-close.png"
+                src="/travelPulse/images/icon-close.png"
                 alt=""
                 width="23"
                 height="23"
@@ -337,7 +337,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               "
             >
               <img
-                src="./images/icon-search-sm.png"
+                src="/travelPulse/images/icon-search-sm.png"
                 alt=""
                 width="26"
                 height="26"
@@ -353,7 +353,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               "
             >
               <img
-                src="./images/icon-airplane-sm.png"
+                src="/travelPulse/images/icon-airplane-sm.png"
                 alt=""
                 width="26"
                 height="26"
@@ -397,7 +397,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
                 @click="closeMenu"
               >
                 <img
-                  src="./images/icon-close.png"
+                  src="/travelPulse/images/icon-close.png"
                   alt=""
                   width="22"
                   height="22"
@@ -525,7 +525,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
                 @click="closeMenu"
               >
                 <img
-                  src="./images/icon-close.png"
+                  src="/travelPulse/images/icon-close.png"
                   alt=""
                   width="22"
                   height="22"
@@ -639,7 +639,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               @click="closeMenu"
             >
               <img
-                src="./images/icon-close.png"
+                src="/travelPulse/images/icon-close.png"
                 alt=""
                 width="22"
                 height="22"
@@ -710,7 +710,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               @click="closeMenu"
             >
               <img
-                src="./images/icon-close.png"
+                src="/travelPulse/images/icon-close.png"
                 alt=""
                 width="22"
                 height="22"
@@ -748,7 +748,12 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
         </button>
 
         <div class="mob-kuda">
-          <img src="./images/icon-pointer.png" alt="" width="21" height="21" />
+          <img
+            src="/travelPulse/images/icon-pointer.png"
+            alt=""
+            width="21"
+            height="21"
+          />
           <input
             v-model="kuda"
             type="text"
@@ -804,7 +809,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
 
           <button type="button" class="mob-knopka" @click="openMenu('klass')">
             <img
-              src="./images/icon-airplane-sm.png"
+              src="/travelPulse/images/icon-airplane-sm.png"
               alt=""
               class="mob-svg"
               width="21"
@@ -826,7 +831,12 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
             aria-label="Закрыть"
             @click="closeMenu"
           >
-            <img src="./images/icon-close.png" alt="" width="22" height="22" />
+            <img
+              src="/travelPulse/images/icon-close.png"
+              alt=""
+              width="22"
+              height="22"
+            />
           </button>
           <ul class="spisok-gorodov">
             <li v-for="g in goroda" :key="g.name">
@@ -879,7 +889,7 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
               @click="closeMenu"
             >
               <img
-                src="./images/icon-close.png"
+                src="/travelPulse/images/icon-close.png"
                 alt=""
                 width="22"
                 height="22"
@@ -938,7 +948,12 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
             aria-label="Закрыть"
             @click="closeMenu"
           >
-            <img src="./images/icon-close.png" alt="" width="22" height="22" />
+            <img
+              src="/travelPulse/images/icon-close.png"
+              alt=""
+              width="22"
+              height="22"
+            />
           </button>
           <div class="ludi-row">
             <div>
@@ -995,7 +1010,12 @@ onBeforeUnmount(() => document.removeEventListener("click", clickOutside));
             aria-label="Закрыть"
             @click="closeMenu"
           >
-            <img src="./images/icon-close.png" alt="" width="22" height="22" />
+            <img
+              src="/travelPulse/images/icon-close.png"
+              alt=""
+              width="22"
+              height="22"
+            />
           </button>
           <p class="klass-zag">{{ t.cabinTitle }}</p>
           <ul class="klass-list">

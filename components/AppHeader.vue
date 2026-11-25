@@ -26,7 +26,7 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
     <div class="wrap shapka-row">
       <a href="#" class="logo">
         <img
-          src="./images/logo.png"
+          src="/travelPulse/images/logo.png"
           alt="TravelPulse"
           class="logo-pic"
           width="83"
@@ -49,7 +49,12 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
           class="poisk-btn"
           :aria-label="t.searchPlaceholder"
         >
-          <img src="./images/icon-search.png" alt="" width="34" height="34" />
+          <img
+            src="/travelPulse/images/icon-search.png"
+            alt=""
+            width="34"
+            height="34"
+          />
         </button>
       </div>
 
@@ -71,7 +76,7 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
               {{ item }}
             </button>
             <img
-              src="./images/icon-add.png"
+              src="/travelPulse/images/icon-add.png"
               alt=""
               class="yazyk-plus"
               width="20"
@@ -82,7 +87,7 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
 
         <button type="button" class="vhod-btn" @click="openAuth('choice')">
           <img
-            src="./images/icon-user.png"
+            src="/travelPulse/images/icon-user.png"
             alt=""
             class="user-pic"
             width="48"
@@ -93,7 +98,7 @@ onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
 
         <button type="button" class="menu-btn" aria-label="Меню">
           <img
-            src="./images/icon-menu.png"
+            src="/travelPulse/images/icon-menu.png"
             alt=""
             class="menu-pic"
             width="46"

@@ -2,10 +2,10 @@
 const { t } = useLang();
 
 const photos = [
-  "./images/dest-paris.png",
-  "./images/dest-rome.png",
-  "./images/dest-bali.png",
-  "./images/dest-baikal.png",
+  "/travelPulse/images/dest-paris.png",
+  "/travelPulse/images/dest-rome.png",
+  "/travelPulse/images/dest-bali.png",
+  "/travelPulse/images/dest-baikal.png",
 ];
 
 const list = computed(() =>
@@ -54,7 +54,7 @@ function nextMob() {
 
       <div class="tochki-box">
         <img
-          src="./images/slider-dots.png"
+          src="/travelPulse/images/slider-dots.png"
           alt=""
           class="tochki"
           width="83"

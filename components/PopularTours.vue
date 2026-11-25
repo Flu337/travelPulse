@@ -6,37 +6,37 @@ const baseTours = [
     loc: "France, Paris",
     title: "DisneyLand",
     rate: "4.7",
-    img: "./images/tour-disneyland.png",
+    img: "/travelPulse/images/tour-disneyland.png",
   },
   {
     loc: "Italy, Roma",
     title: "Coliseum",
     rate: "4.2",
-    img: "./images/tour-coliseum.png",
+    img: "/travelPulse/images/tour-coliseum.png",
   },
   {
     loc: "Indonesia, Bali",
     title: "Tanakh-Lot",
     rate: "5.0",
-    img: "./images/tour-tanah-lot.png",
+    img: "/travelPulse/images/tour-tanah-lot.png",
   },
   {
     loc: "Russia, Irkutsk",
     title: "Olkhon",
     rate: "4.0",
-    img: "./images/tour-olkhon.png",
+    img: "/travelPulse/images/tour-olkhon.png",
   },
   {
     loc: "China",
     title: "The Great Wall of China",
     rate: "4.1",
-    img: "./images/tour-great-wall.png",
+    img: "/travelPulse/images/tour-great-wall.png",
   },
   {
     loc: "UAE, Dubai",
     title: "Burj Khalifa",
     rate: "4.8",
-    img: "./images/tour-burj-khalifa.png",
+    img: "/travelPulse/images/tour-burj-khalifa.png",
   },
 ];
 
@@ -70,7 +70,7 @@ const tury = computed(() =>
             <div class="reiting">
               <span class="ocenka">{{ item.rate }}</span>
               <img
-                src="./images/icon-star.png"
+                src="/travelPulse/images/icon-star.png"
                 alt=""
                 class="zvezda"
                 width="26"

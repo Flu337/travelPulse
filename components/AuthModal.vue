@@ -30,12 +30,17 @@ function submitReg() {
         aria-label="Закрыть"
         @click="closeAuth"
       >
-        <img src="./images/icon-x.png" alt="" width="28" height="28" />
+        <img
+          src="/travelPulse/images/icon-x.png"
+          alt=""
+          width="28"
+          height="28"
+        />
       </button>
 
       <div class="okno-logo">
         <img
-          src="./images/logo-big.png"
+          src="/travelPulse/images/logo-big.png"
           alt="TravelPulse"
           class="logo-img"
           width="116"
@@ -52,17 +57,32 @@ function submitReg() {
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="./images/icon-fb.png" alt="" width="26" height="26" />
+          <img
+            src="/travelPulse/images/icon-fb.png"
+            alt=""
+            width="26"
+            height="26"
+          />
           <span>Facebook</span>
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="./images/icon-google.png" alt="" width="28" height="26" />
+          <img
+            src="/travelPulse/images/icon-google.png"
+            alt=""
+            width="28"
+            height="26"
+          />
           <span>Google</span>
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="./images/icon-apple.png" alt="" width="27" height="27" />
+          <img
+            src="/travelPulse/images/icon-apple.png"
+            alt=""
+            width="27"
+            height="27"
+          />
           <span>Apple</span>
         </button>
       </div>
@@ -87,12 +107,17 @@ function submitReg() {
         aria-label="Закрыть"
         @click="closeAuth"
       >
-        <img src="./images/icon-x.png" alt="" width="28" height="28" />
+        <img
+          src="/travelPulse/images/icon-x.png"
+          alt=""
+          width="28"
+          height="28"
+        />
       </button>
 
       <div class="okno-logo">
         <img
-          src="./images/logo-big.png"
+          src="/travelPulse/images/logo-big.png"
           alt="TravelPulse"
           class="logo-img"
           width="118"
@@ -149,12 +174,17 @@ function submitReg() {
         aria-label="Закрыть"
         @click="closeAuth"
       >
-        <img src="./images/icon-x.png" alt="" width="28" height="28" />
+        <img
+          src="/travelPulse/images/icon-x.png"
+          alt=""
+          width="28"
+          height="28"
+        />
       </button>
 
       <div class="okno-logo">
         <img
-          src="./images/logo-big.png"
+          src="/travelPulse/images/logo-big.png"
           alt="TravelPulse"
           class="logo-img"
           width="118"
