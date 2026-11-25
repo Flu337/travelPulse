@@ -12,7 +12,7 @@
 
 ## Ссылки 
 - [Открыть сайт TravelPulse](https://flu337.github.io/travelPulse/)
-- [Figma]([https://flu337.github.io/travelPulse/](https://www.figma.com/design/3xZLB5LdOCdKqzV0u5IbXJ/TravelPulse?node-id=0-1&p=f&t=5ZFjHbkOjsA9VQa2-0))
+- [Figma](https://www.figma.com/design/3xZLB5LdOCdKqzV0u5IbXJ/TravelPulse?node-id=0-1&p=f&t=5ZFjHbkOjsA9VQa2-0)
 
 ## Реализованный функционал
 
