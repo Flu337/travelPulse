@@ -1,31 +1,37 @@
 <script setup lang="ts">
-const { lang, t, otherLangs, setLang } = useLang()
-const { openAuth } = useAuthModal()
+const { lang, t, otherLangs, setLang } = useLang();
+const { openAuth } = useAuthModal();
 
-const poiskText = ref('')
-const langOpen = ref(false)
-const langBoxRef = ref<HTMLElement | null>(null)
+const poiskText = ref("");
+const langOpen = ref(false);
+const langBoxRef = ref<HTMLElement | null>(null);
 
-function pickLang(code: 'RUS' | 'ENG' | '中国人') {
-  setLang(code)
-  langOpen.value = false
+function pickLang(code: "RUS" | "ENG" | "中国人") {
+  setLang(code);
+  langOpen.value = false;
 }
 
 function closeOutside(e: MouseEvent) {
   if (langBoxRef.value && !langBoxRef.value.contains(e.target as Node)) {
-    langOpen.value = false
+    langOpen.value = false;
   }
 }
 
-onMounted(() => document.addEventListener('click', closeOutside))
-onBeforeUnmount(() => document.removeEventListener('click', closeOutside))
+onMounted(() => document.addEventListener("click", closeOutside));
+onBeforeUnmount(() => document.removeEventListener("click", closeOutside));
 </script>
 
 <template>
   <header id="shapka" class="shapka">
     <div class="wrap shapka-row">
       <a href="#" class="logo">
-        <img src="/images/logo.png" alt="TravelPulse" class="logo-pic" width="83" height="83" />
+        <img
+          src="./images/logo.png"
+          alt="TravelPulse"
+          class="logo-pic"
+          width="83"
+          height="83"
+        />
         <span class="logo-name">Travel<br />Pulse</span>
       </a>
 
@@ -38,8 +44,12 @@ onBeforeUnmount(() => document.removeEventListener('click', closeOutside))
           :placeholder="t.searchPlaceholder"
           :aria-label="t.searchPlaceholder"
         />
-        <button type="button" class="poisk-btn" :aria-label="t.searchPlaceholder">
-          <img src="/images/icon-search.png" alt="" width="34" height="34" />
+        <button
+          type="button"
+          class="poisk-btn"
+          :aria-label="t.searchPlaceholder"
+        >
+          <img src="./images/icon-search.png" alt="" width="34" height="34" />
         </button>
       </div>
 
@@ -60,17 +70,35 @@ onBeforeUnmount(() => document.removeEventListener('click', closeOutside))
             >
               {{ item }}
             </button>
-            <img src="/images/icon-add.png" alt="" class="yazyk-plus" width="20" height="20" />
+            <img
+              src="./images/icon-add.png"
+              alt=""
+              class="yazyk-plus"
+              width="20"
+              height="20"
+            />
           </div>
         </div>
 
         <button type="button" class="vhod-btn" @click="openAuth('choice')">
-          <img src="/images/icon-user.png" alt="" class="user-pic" width="48" height="48" />
+          <img
+            src="./images/icon-user.png"
+            alt=""
+            class="user-pic"
+            width="48"
+            height="48"
+          />
           <span class="vhod-text">{{ t.login }}</span>
         </button>
 
         <button type="button" class="menu-btn" aria-label="Меню">
-          <img src="/images/icon-menu.png" alt="" class="menu-pic" width="46" height="46" />
+          <img
+            src="./images/icon-menu.png"
+            alt=""
+            class="menu-pic"
+            width="46"
+            height="46"
+          />
         </button>
       </div>
     </div>

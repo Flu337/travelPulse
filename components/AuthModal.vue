@@ -1,21 +1,21 @@
 <script setup lang="ts">
-const { step, openAuth, closeAuth } = useAuthModal()
-const { t } = useLang()
+const { step, openAuth, closeAuth } = useAuthModal();
+const { t } = useLang();
 
-const remember = ref(false)
-const acceptTerms = ref(false)
-const email = ref('')
-const pass = ref('')
-const firstName = ref('')
-const lastName = ref('')
-const confirmPass = ref('')
+const remember = ref(false);
+const acceptTerms = ref(false);
+const email = ref("");
+const pass = ref("");
+const firstName = ref("");
+const lastName = ref("");
+const confirmPass = ref("");
 
 function submitLogin() {
-  closeAuth()
+  closeAuth();
 }
 
 function submitReg() {
-  closeAuth()
+  closeAuth();
 }
 </script>
 
@@ -24,12 +24,23 @@ function submitReg() {
   <div v-if="step" id="auth-okno" class="fon-okna" @click.self="closeAuth">
     <!-- шаг 1 выбор способа входа frame 8 -->
     <div v-if="step === 'choice'" class="okno okno-vybor">
-      <button type="button" class="zakryt" aria-label="Закрыть" @click="closeAuth">
-        <img src="/images/icon-x.png" alt="" width="28" height="28" />
+      <button
+        type="button"
+        class="zakryt"
+        aria-label="Закрыть"
+        @click="closeAuth"
+      >
+        <img src="./images/icon-x.png" alt="" width="28" height="28" />
       </button>
 
       <div class="okno-logo">
-        <img src="/images/logo-big.png" alt="TravelPulse" class="logo-img" width="116" height="116" />
+        <img
+          src="./images/logo-big.png"
+          alt="TravelPulse"
+          class="logo-img"
+          width="116"
+          height="116"
+        />
         <p class="logo-text">TravelPulse</p>
       </div>
 
@@ -41,17 +52,17 @@ function submitReg() {
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="/images/icon-fb.png" alt="" width="26" height="26" />
+          <img src="./images/icon-fb.png" alt="" width="26" height="26" />
           <span>Facebook</span>
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="/images/icon-google.png" alt="" width="28" height="26" />
+          <img src="./images/icon-google.png" alt="" width="28" height="26" />
           <span>Google</span>
         </button>
 
         <button type="button" class="btn-seraya btn-soc" @click="closeAuth">
-          <img src="/images/icon-apple.png" alt="" width="27" height="27" />
+          <img src="./images/icon-apple.png" alt="" width="27" height="27" />
           <span>Apple</span>
         </button>
       </div>
@@ -65,13 +76,28 @@ function submitReg() {
     </div>
 
     <!-- шаг 2 вход по почте frame 13 -->
-    <form v-else-if="step === 'login'" class="okno okno-forma" @submit.prevent="submitLogin">
-      <button type="button" class="zakryt" aria-label="Закрыть" @click="closeAuth">
-        <img src="/images/icon-x.png" alt="" width="28" height="28" />
+    <form
+      v-else-if="step === 'login'"
+      class="okno okno-forma"
+      @submit.prevent="submitLogin"
+    >
+      <button
+        type="button"
+        class="zakryt"
+        aria-label="Закрыть"
+        @click="closeAuth"
+      >
+        <img src="./images/icon-x.png" alt="" width="28" height="28" />
       </button>
 
       <div class="okno-logo">
-        <img src="/images/logo-big.png" alt="TravelPulse" class="logo-img" width="118" height="118" />
+        <img
+          src="./images/logo-big.png"
+          alt="TravelPulse"
+          class="logo-img"
+          width="118"
+          height="118"
+        />
         <p class="logo-text">TravelPulse</p>
       </div>
 
@@ -79,11 +105,23 @@ function submitReg() {
 
       <div class="polya">
         <div class="ramka-polya">
-          <input v-model="email" type="email" class="vvod" :placeholder="t.emailPh" required />
+          <input
+            v-model="email"
+            type="email"
+            class="vvod"
+            :placeholder="t.emailPh"
+            required
+          />
         </div>
 
         <div class="ramka-polya">
-          <input v-model="pass" type="password" class="vvod" :placeholder="t.passPh" required />
+          <input
+            v-model="pass"
+            type="password"
+            class="vvod"
+            :placeholder="t.passPh"
+            required
+          />
         </div>
       </div>
 
@@ -100,13 +138,28 @@ function submitReg() {
     </form>
 
     <!-- шаг 3 регистрация frame 14 -->
-    <form v-else-if="step === 'register'" class="okno okno-forma" @submit.prevent="submitReg">
-      <button type="button" class="zakryt" aria-label="Закрыть" @click="closeAuth">
-        <img src="/images/icon-x.png" alt="" width="28" height="28" />
+    <form
+      v-else-if="step === 'register'"
+      class="okno okno-forma"
+      @submit.prevent="submitReg"
+    >
+      <button
+        type="button"
+        class="zakryt"
+        aria-label="Закрыть"
+        @click="closeAuth"
+      >
+        <img src="./images/icon-x.png" alt="" width="28" height="28" />
       </button>
 
       <div class="okno-logo">
-        <img src="/images/logo-big.png" alt="TravelPulse" class="logo-img" width="118" height="118" />
+        <img
+          src="./images/logo-big.png"
+          alt="TravelPulse"
+          class="logo-img"
+          width="118"
+          height="118"
+        />
         <p class="logo-text">TravelPulse</p>
       </div>
 
@@ -114,23 +167,53 @@ function submitReg() {
 
       <div class="polya">
         <div class="ramka-polya">
-          <input v-model="firstName" type="text" class="vvod" :placeholder="t.firstNamePh" required />
+          <input
+            v-model="firstName"
+            type="text"
+            class="vvod"
+            :placeholder="t.firstNamePh"
+            required
+          />
         </div>
 
         <div class="ramka-polya">
-          <input v-model="lastName" type="text" class="vvod" :placeholder="t.lastNamePh" required />
+          <input
+            v-model="lastName"
+            type="text"
+            class="vvod"
+            :placeholder="t.lastNamePh"
+            required
+          />
         </div>
 
         <div class="ramka-polya">
-          <input v-model="email" type="email" class="vvod" :placeholder="t.emailPh" required />
+          <input
+            v-model="email"
+            type="email"
+            class="vvod"
+            :placeholder="t.emailPh"
+            required
+          />
         </div>
 
         <div class="ramka-polya">
-          <input v-model="pass" type="password" class="vvod" :placeholder="t.passPh" required />
+          <input
+            v-model="pass"
+            type="password"
+            class="vvod"
+            :placeholder="t.passPh"
+            required
+          />
         </div>
 
         <div class="ramka-polya">
-          <input v-model="confirmPass" type="password" class="vvod" :placeholder="t.confirmPassPh" required />
+          <input
+            v-model="confirmPass"
+            type="password"
+            class="vvod"
+            :placeholder="t.confirmPassPh"
+            required
+          />
         </div>
       </div>
 
