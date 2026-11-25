@@ -10,6 +10,10 @@
 - **CSS3** (Flexbox, CSS Grid, CSS-переменные) — отдельные таблицы стилей для каждого компонента
 - **Google Fonts (Inter)** — основная типографика по макету Figma
 
+## Ссылки 
+- [Открыть сайт TravelPulse](https://flu337.github.io/travelPulse/)
+- [Figma]([https://flu337.github.io/travelPulse/](https://www.figma.com/design/3xZLB5LdOCdKqzV0u5IbXJ/TravelPulse?node-id=0-1&p=f&t=5ZFjHbkOjsA9VQa2-0))
+
 ## Реализованный функционал
 
 - **Шапка сайта и мультиязычность**: логотип, строка быстрого поиска на десктопе, выпадающее переключение языка (`RUS` / `ENG` / `中国人`) с динамическим переводом интерфейса, кнопка входа и меню.
